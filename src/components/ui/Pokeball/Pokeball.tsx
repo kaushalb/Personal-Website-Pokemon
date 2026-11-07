@@ -9,14 +9,14 @@ import { cn } from "@/lib/cn";
 export interface PokeballProps {
   /** When true, the halves split apart. */
   isOpen?: boolean;
-  /** Controls size, e.g. "w-40". The ball fills its container width. */
+  /** Controls size, e.g. "w-40". Defaults to "w-full" (fills its container) when omitted. */
   className?: string;
 }
 
 /** Pixel-art pokeball built from two halves so it can open. */
 export function Pokeball({ isOpen = false, className }: PokeballProps) {
   return (
-    <div className={cn("flex w-full flex-col", className)}>
+    <div className={cn("flex flex-col", className ?? "w-full")}>
       <div className={cn(isOpen && "animate-pokeball-top-open")}>
         <PixelSprite grid={POKEBALL_TOP_GRID} palette={POKEBALL_PALETTE} className="block w-full" />
       </div>

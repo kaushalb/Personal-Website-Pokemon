@@ -6,4 +6,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
+## Project Layout
+Important rule is - if a component, class, function or method is unused then it must be deleted from the codebase. We must always prioritize reducing tech debt. 
+
 <!-- END:nextjs-agent-rules -->
