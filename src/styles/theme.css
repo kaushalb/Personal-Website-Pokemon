@@ -1,0 +1,11 @@
+/* Shared Pokemon theme tokens. Use as bg-poke-red, text-poke-blue, etc. */
+@theme {
+  --color-poke-red: #ee1515;
+  --color-poke-red-dark: #c40f0f;
+  --color-poke-yellow: #ffcb05;
+  --color-poke-yellow-dark: #e0b200;
+  --color-poke-blue: #3b4cca;
+  --color-poke-blue-dark: #1d2a7a;
+  --color-poke-ink: #1b1b1f;
+  --color-poke-white: #ffffff;
+}

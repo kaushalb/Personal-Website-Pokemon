@@ -1,0 +1,5 @@
+/* Hides the overlay when the inline head script flagged the intro as seen.
+   Attribute name must match INTRO_SEEN_HTML_ATTRIBUTE in constants/intro.ts. */
+html[data-intro-seen] [data-intro-overlay] {
+  display: none;
+}

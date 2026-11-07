@@ -1,0 +1,28 @@
+/* Shared animations. steps() timing gives the retro, frame-by-frame feel. */
+@theme {
+  --animate-pokeball-drop: pokeball-drop 1.2s steps(10, end) both;
+  --animate-pokeball-top-open: pokeball-top-open 0.6s steps(4, end) both;
+  --animate-pokeball-bottom-open: pokeball-bottom-open 0.6s steps(4, end) both;
+  --animate-pokeball-flash: pokeball-flash 0.9s 0.3s steps(10, end) both;
+  --animate-intro-fade: intro-fade 0.6s ease-out both;
+
+  @keyframes pokeball-drop {
+    0% { transform: translateY(-100vh); }
+    60% { transform: translateY(0); }
+    75% { transform: translateY(-6vh); }
+    90%, 100% { transform: translateY(0); }
+  }
+  @keyframes pokeball-top-open {
+    to { transform: translateY(-60%); }
+  }
+  @keyframes pokeball-bottom-open {
+    to { transform: translateY(60%); }
+  }
+  @keyframes pokeball-flash {
+    from { transform: scale(0); }
+    to { transform: scale(40); }
+  }
+  @keyframes intro-fade {
+    to { opacity: 0; }
+  }
+}
