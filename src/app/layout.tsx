@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
+import { SceneBackground } from "@/components/layout/SceneBackground";
 import { SITE_NAME } from "@/constants/site";
 import { IntroOverlay } from "@/features/intro";
 import { INTRO_SEEN_SCRIPT } from "@/lib/introScript";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: INTRO_SEEN_SCRIPT }} />
       </head>
       <body className="min-h-full flex flex-col">
+        <SceneBackground />
         <IntroOverlay />
         <Navbar />
         {children}
