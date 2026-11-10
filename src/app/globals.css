@@ -5,8 +5,19 @@
 @import "../styles/intro.css";
 
 :root {
-  --background: #ffffff;
+  --background: #8fd0f7;
   --foreground: #171717;
+  /* Gen 3 style backdrop: sky fading toward the horizon, then grass. Light-only on purpose. */
+  --background-scene: linear-gradient(
+    to bottom,
+    #4aa8ee 0%,
+    #8fd0f7 45%,
+    #d6f0ff 68%,
+    #d6f0ff 70%,
+    #7ccf4e 70%,
+    #5fb23a 85%,
+    #3f8f2f 100%
+  );
 }
 
 @theme inline {
@@ -16,15 +27,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background: var(--background-scene) fixed no-repeat, var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }

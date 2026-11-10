@@ -7,7 +7,9 @@ export const ABOUT_ME: AboutMeContent = {
   dexNumber: "No. 001",
   typeLabel: "Developer",
   bio: [
-    "Placeholder: write a short first-person bio here.",
-    "Placeholder: a second paragraph is optional.",
+    "Type: Senior Technical Consultant @ Credera | Graduate Student @ Georgia Tech in Computer Science | Pokemon Trainer",
+    "Bio: I am a software developer who likes building all sorts of applications and learning new techologies."
+    + ""
+    + ""
   ],
 };
