@@ -3,6 +3,7 @@ import { NavLink } from "@/components/ui/NavLink";
 import { Pokeball } from "@/components/ui/Pokeball";
 import { DEFAULT_ROUTE, NAV_ITEMS } from "@/constants/navigation";
 import { SITE_NAME } from "@/constants/site";
+import { ContactModal } from "@/features/contact";
 
 /** Top navigation bar. Links come from constants/navigation.ts. */
 export function Navbar() {
@@ -22,6 +23,9 @@ export function Navbar() {
               <NavLink {...item} />
             </li>
           ))}
+          <li>
+            <ContactModal />
+          </li>
         </ul>
       </nav>
     </header>

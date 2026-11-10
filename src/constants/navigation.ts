@@ -5,7 +5,6 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { label: "About Me", href: "/about-me" },
   { label: "Interests", href: "/interests" },
   { label: "Experience", href: "/experience" },
-  { label: "Contact Me", href: "/contact-me" },
 ];
 
 /** Where "/" sends visitors (the page the intro opens into). */
