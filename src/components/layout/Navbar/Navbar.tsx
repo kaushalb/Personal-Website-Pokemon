@@ -10,11 +10,11 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b-4 border-poke-red bg-poke-blue-dark">
       <nav
         aria-label="Main"
-        className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3"
+        className="flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3"
       >
         <Link href={DEFAULT_ROUTE} className="flex items-center gap-2 font-bold text-poke-white">
-          <Pokeball className="w-1.5" />
-          {SITE_NAME}
+          <Pokeball className="w-6" />
+          Kaushal Bommena
         </Link>
         <ul className="flex flex-wrap items-center gap-1">
           {NAV_ITEMS.map((item) => (
